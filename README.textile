@@ -1,0 +1,31 @@
+h2. wet_haystack Textpattern plugin
+
+h3. Purpose
+
+Textpattern's full text index uses the articles' body and title contents to find proper matches for site-internal searches.
+
+*wet_haystack* allows site publishers to modify this default behaviour by adding additional article fields to the set of indexed content.
+
+h3. Usage
+
+NB: This plugin is intended for Textpattern 4.2.0+. It will not work with earlier versions. You need to acquire publisher privileges to change a site's fulltext search settings with this plugin.
+
+h4. Building a custom fulltext index
+
+* Go to the *wet_haystack options* panel.
+* Check all the article fields you want to include in the full text index.
+* Hit "Save" and wait for the database to re-index the content of your current site. Depending on the number and length of your articles, this may take a while.
+
+You do not need to keep *wet_haystack* installed once the custom full-text index has been created.
+
+h4. Removing an obsolete custom fulltext index
+
+*wet_haystack* requires an additional database index for its operation, which it will continue to use as long as you change Textpattern's default full-text index settings. This custom full-text index will be deleted when the custom setting matches Textpattern's default setting (i.e. "Title" and "Body" are the only properties checked).
+
+h3. Additional information
+
+Visit the "wet_haystack documentation page":https://wetzlmayr.at/awasteofwords/wet_haystack-textpattern-plugin.
+
+h3. Licence
+
+This plugin is released under the "Gnu General Public Licence":https://www.gnu.org/licenses/gpl-3.0.txt.

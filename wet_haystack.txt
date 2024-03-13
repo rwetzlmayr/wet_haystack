@@ -1,0 +1,65 @@
+# wet_haystack v0.7
+# Custom full text index builder
+# Robert Wetzlmayr
+# https://wetzlmayr.at/awasteofwords/wet_haystack-textpattern-plugin
+
+# ......................................................................
+# This is a plugin for Textpattern - http://textpattern.com/
+# To install: textpattern > admin > plugins
+# Paste the following text into the 'Install plugin' box:
+# ......................................................................
+
+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
+p09jb3L7X02YpF1iIAAA
